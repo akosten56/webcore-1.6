@@ -1,0 +1,155 @@
+body.scroll-lock {
+  overflow-y: hidden;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon {
+  width: 20px;
+}
+
+.button-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ff3e79;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__burger-button {
+}
+
+.logo {
+  & img {
+    width: 96.5px;
+  }
+}
+
+.before-tool {
+  width: 2px;
+  height: 32px;
+  background: #eaeaea;
+  border-radius: 1px;
+}
+
+.header__tools-button {
+}
+
+.header__checkstatus-button {
+}
+
+.menu {
+  z-index: 2;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fff;
+  padding: 0 16px 16px 16px;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.menu__header {
+  position: relative;
+  gap: 16px;
+}
+
+.menu__cancel-button {
+}
+
+.menu__logo {
+  margin-right: 78px;
+}
+
+.menu__search-button {
+}
+
+.menu__container {
+  margin-top: 4px;
+}
+
+.menu__list li {
+  margin-top: 24px;
+  &:first-child {
+    margin: 0;
+  }
+}
+
+.menu__link {
+  font-family: 'TTLakesMedium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  & span {
+    color: #7e7e82;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 32px;
+      width: 4px;
+      left: 0;
+      top: 88px;
+      border-radius: 0px 10px 10px 0;
+      background: #41f6d7;
+    }
+  }
+}
+
+.menu__function {
+  margin-top: 32px;
+  display: flex;
+  gap: 16px;
+}
+
+.menu__phone-button {
+}
+
+.menu__message-button {
+}
+
+.menu__profile-button {
+}
+
+.menu__mail {
+  font-family: 'TTLakesMedium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-top: 16px;
+  color: #1b1c21;
+}
+
+.menu__number {
+  font-family: 'TTLakesBold';
+  margin-top: 12px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+}
+
+.menu__chose-lang span {
+  font-family: 'TTLakesMedium';
+  margin: 8px 7px 0 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  &:first-child {
+    color: #7e7e82;
+  }
+}
