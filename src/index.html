@@ -31,7 +31,7 @@
         </button>
       </header>
       <div class="menu">
-        <div class="menu__header header">
+        <div class="menu__header">
           <button class="menu__cancel-button button-circle">
             <img class="icon" src="src\img\cancel-icon.png" />
           </button>
@@ -481,7 +481,7 @@
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30-120 мин</span>
                     </div>
-                    <div class="image-slider__long-button">
+                    <div class="image-slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -505,7 +505,7 @@
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30 мин</span>
                     </div>
-                    <div class="image-slider__long-button">
+                    <div class="image-slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -529,7 +529,7 @@
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30-120 мин</span>
                     </div>
-                    <div class="image-slider__long-button">
+                    <div class="image-slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -553,7 +553,7 @@
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30-120 мин</span>
                     </div>
-                    <div class="image-slider__long-button">
+                    <div class="image-slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -577,7 +577,7 @@
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30-120 мин</span>
                     </div>
-                    <div class="image-slider__long-button">
+                    <div class="image-slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -602,6 +602,80 @@
           </div>
         </div>
       </main>
+      <footer class="footer">
+        <div class="footer__text"
+          >© 2019 CPS <br />
+          Разработано командой Apesong
+        </div>
+        <div class="footer__text">Политика конфиденциальности</div>
+        <div class="footer__text">
+          Информация, размещенная на данной странице, не является публичной
+          офертой
+        </div>
+      </footer>
+      <div class="modal-call modal">
+        <button class="modal-call__cancel-button button-circle">
+          <img class="icon" src="src\img\cancel-icon.png" />
+        </button>
+        <h1 class="modal-call__title modal-title">Заказать звонок</h1>
+        <div class="modal-call__tel modal-input">
+          <input type="tel" placeholder="Телефон" />
+        </div>
+        <div class="modal-call__text modal-text">
+          Нажимая “отправить”, вы даете согласие на 
+          <span>обработку персональных данных</span>
+          и  соглашаетесь с нашей <span>политикой конфиденциальности</span>
+        </div>
+        <div class="modal-call__box modal-box">
+          <button
+            type="submit"
+            class="modal-call__submit-button modal-button long-button"
+          >
+            <p>ОТПРАВИТЬ</p>
+            <img
+              src="src\img\dropdown-white.png"
+              alt=""
+              class="dropdown-white"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="modal-feedback modal">
+        <button class="modal-feedback__cancel-button button-circle">
+          <img class="icon" src="src\img\cancel-icon.png" />
+        </button>
+        <h1 class="modal-feedback__title modal-title">Обратная связь</h1>
+        <div class="modal-feedback__name modal-input">
+          <input type="text" placeholder="Имя" />
+        </div>
+        <div class="modal-feedback__tel modal-input">
+          <input type="tel" placeholder="Телефон" />
+        </div>
+        <div class="modal-feedback__email modal-input">
+          <input type="email" placeholder="Электронная почта" />
+        </div>
+        <div class="modal-feedback__message modal-input">
+          <textarea type="text" placeholder="Сообщение"></textarea>
+        </div>
+        <div class="modal-feedback__text modal-text">
+          Нажимая “отправить”, вы даете согласие на 
+          <span>обработку персональных данных</span>
+          и  соглашаетесь с нашей <span>политикой конфиденциальности</span>
+        </div>
+        <div class="modal-feedback__box modal-box">
+          <button
+            type="submit"
+            class="modal-feedback__submit-button modal-button long-button"
+          >
+            <p>ОТПРАВИТЬ</p>
+            <img
+              src="src\img\dropdown-white.png"
+              alt=""
+              class="dropdown-white"
+            />
+          </button>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </body>
