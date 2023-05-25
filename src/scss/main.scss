@@ -1,0 +1,147 @@
+.main {
+  position: relative;
+  top: 88px;
+  left: 0;
+  background: #f8f8f8;
+  height: 100%;
+  width: 100%;
+  padding-top: 24px;
+}
+.main__container {
+  padding: 0 16px;
+}
+.main__title {
+  font-family: 'TTLakesBold';
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 4px;
+    left: 0px;
+    top: 24px;
+    border-radius: 0px 10px 10px 0;
+    background: #41f6d7;
+  }
+}
+.nav-list {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-list__item {
+    padding: 6px 14px;
+    white-space: nowrap;
+    font-family: 'TTLakesMedium';
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7e7e82;
+    &:nth-child(1) {
+      border: 3px solid #b8ffec;
+      border-radius: 6px;
+    }
+  }
+}
+
+.info {
+  margin-top: 24px;
+}
+
+.info__text {
+  font-family: 'TTLakesRegular';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1b1c21;
+}
+.info__more-text {
+}
+.info__open-button {
+  margin-top: 16px;
+  display: flex;
+  font-family: 'TTLakesMedium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  background: #f8f8f8;
+}
+
+.info__close-button {
+  margin-top: 16px;
+  display: flex;
+  font-family: 'TTLakesMedium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  background: #f8f8f8;
+  & .dropdown-icon {
+    transform: rotate(-180deg);
+  }
+}
+
+.dropdown-icon {
+  position: relative;
+  top: 6px;
+  right: 16px;
+  width: 8px;
+  margin-left: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main__image {
+  margin-top: 16px;
+  & img {
+    width: 100%;
+  }
+}
+
+.main__subtitle {
+  font-family: 'TTLakesRegular';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  margin-top: 16px;
+  padding: 16px;
+  color: #7e7e82;
+  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+  border-radius: 5px;
+}
+
+.main__text {
+  font-family: 'TTLakesRegular';
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #1b1c21;
+}
+.main__get-offer {
+  margin-top: 16px;
+  font-family: 'TTLakesMedium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1b1c21;
+  & .dropdown-pink {
+    width: 6px;
+    position: relative;
+    top: 8px;
+    left: 4px;
+  }
+}

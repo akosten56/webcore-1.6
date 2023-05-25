@@ -1,0 +1,170 @@
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.slider-logo {
+}
+
+.image-slider {
+  margin-top: 16px;
+}
+
+.swiper-container {
+}
+
+.image-slider__wrapper {
+}
+
+.swiper-wrapper {
+}
+
+.slider-logo .image-slider__slide {
+  height: 72px;
+  width: 224px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.slider-type .image-slider__slide {
+  height: 160px;
+  width: 240px;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.slider-price .image-slider__slide {
+  height: 200px;
+  width: 260px;
+  border-radius: 6px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  font-family: 'TTLakesRegular';
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: #1b1c21;
+  & .grey-subtitle {
+    color: #7e7e82;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+}
+
+.swiper-slide {
+}
+
+.image-slider__image p {
+  font-family: 'TTLakesMedium';
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+
+  color: #1b1c21;
+}
+
+.lenovo-logo {
+  height: 32px;
+}
+
+.samsung-logo {
+  height: 38px;
+}
+
+.apple-logo {
+  height: 44px;
+}
+
+.bosch-logo {
+  height: 29px;
+}
+
+.hp-logo {
+  height: 52px;
+}
+
+.acer-logo {
+  height: 24px;
+}
+
+.viewsonic-logo {
+  height: 21px;
+}
+
+.sony-logo {
+  height: 26px;
+}
+
+.image-slider__button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  border: 2px solid #ff3e79;
+  background-color: #fff;
+  & .dropdown-pink {
+    width: 8px;
+  }
+}
+
+.image-slider__long-button {
+  height: 32px;
+  width: 119px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff3e79;
+  font-family: 'TTLakesBold';
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0 12px;
+  & .dropdown-white {
+    width: 8px;
+  }
+}
+
+.image-slider__flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.slider-type .image-slider__button {
+  align-self: flex-end;
+}
+
+.swiper-button-next {
+}
+
+.swiper-button-prev {
+}
+
+.swiper-pagination {
+  position: relative;
+  margin-top: 22px;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background: #b5b6bc;
+}

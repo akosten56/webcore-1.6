@@ -2,3 +2,5 @@
 
 import '../scss/style.scss'
 import '../js/burger-menu'
+import '../js/spoiler'
+import '../js/swiper'
