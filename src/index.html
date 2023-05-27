@@ -11,7 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <title>Document</title>
+    <title>webcore-1.6</title>
   </head>
   <body>
     <div class="wrapper">
@@ -19,10 +19,21 @@
         <button class="header__burger-button button-circle">
           <img class="icon" src="src\img\burger-icon.png" />
         </button>
+        <div class="before-tool first"></div>
         <picture class="header__logo logo">
           <img src="src\img\CPS-logo.png" alt="CPS-logo" />
         </picture>
-        <div class="before-tool"></div>
+        <div class="before-tool second"></div>
+        <button class="header__phone-button button-circle">
+          <img class="icon" src="src\img\phone-icon.png" />
+        </button>
+        <button class="header__message-button button-circle">
+          <img class="icon" src="src\img\message-icon.png" />
+        </button>
+        <button class="header__profile-button button-circle">
+          <img class="icon" src="src\img\profile-icon.png" />
+        </button>
+        <div class="before-tool third"></div>
         <button class="header__tools-button button-circle">
           <img class="icon" src="src\img\tools-icon.png" />
         </button>
@@ -30,7 +41,7 @@
           <img class="icon" src="src\img\checkstatus-icon.png" />
         </button>
       </header>
-      <div class="menu">
+      <div class="menu modal">
         <div class="menu__header">
           <button class="menu__cancel-button button-circle">
             <img class="icon" src="src\img\cancel-icon.png" />
@@ -107,6 +118,8 @@
             <div class="nav-list__item">Адреса сервисных центров</div>
             <div class="nav-list__item">Специальные цены</div>
           </div>
+        </div>
+        <div class="main__flex-box">
           <div class="info">
             <div class="info__text">
               Мы являемся авторизованным сервисным центром по ремонту техники
@@ -121,33 +134,34 @@
                 очередь, советуют нас родным и близким.
               </span>
             </div>
-            <button class="info__open-button">
+            <button class="info__open-button open-button">
               <img src="src\img\read-more.png" class="dropdown-icon" />
               <p>Читать дальше</p>
             </button>
-            <button class="info__close-button hidden">
+            <button class="info__close-button close-button hidden">
               <img src="src\img\read-more.png" class="dropdown-icon" />
               <p>Скрыть</p>
             </button>
           </div>
+          <div class="main__image">
+            <img src="src\img\cps-main.jpg" alt="" />
+          </div>
         </div>
-        <div class="main__image">
-          <img src="src\img\cps-main.jpg" alt="" />
-        </div>
+
         <div class="main__container">
           <h2 class="main__subtitle">Ремонт техники различных брендов</h2>
           <div class="slider-logo">
-            <div class="image-slider swiper-container">
-              <div class="image-slider__wrapper swiper-wrapper">
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+            <div class="slider swiper-container">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <img
                       class="lenovo-logo"
                       src="src\img\Lenovo-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -155,15 +169,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <img
                       class="samsung-logo"
                       src="src\img\Samsung-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -171,15 +185,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <img
                       class="apple-logo"
                       src="src\img\Apple-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -187,15 +201,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <img
                       class="bosch-logo"
                       src="src\img\Bosch-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -203,15 +217,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <img
                       class="hp-logo"
                       src="src\img\Hp-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -219,15 +233,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <img
                       class="acer-logo"
                       src="src\img\Acer-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -235,15 +249,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <img
                       class="viewsonic-logo"
                       src="src\img\ViewSonic-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -251,15 +265,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <img
                       class="sony-logo"
                       src="src\img\Sony-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -267,15 +281,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <img
                       class="lenovo-logo"
                       src="src\img\Lenovo-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -283,15 +297,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <img
                       class="samsung-logo"
                       src="src\img\Samsung-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -299,15 +313,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <img
                       class="apple-logo"
                       src="src\img\Apple-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -315,15 +329,15 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <img
                       class="bosch-logo"
                       src="src\img\Bosch-logo.png"
                       alt="picture"
                     />
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -334,16 +348,24 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
+            <button class="slider-logo__open-button open-button">
+              <img src="src\img\read-more.png" class="dropdown-icon" />
+              <p>Показать все</p>
+            </button>
+            <button class="slider-logo__close-button close-button hidden">
+              <img src="src\img\read-more.png" class="dropdown-icon" />
+              <p>Скрыть</p>
+            </button>
           </div>
           <h2 class="main__subtitle">Ремонт различных видов техники</h2>
           <div class="slider-type">
-            <div class="image-slider swiper-container">
-              <div class="image-slider__wrapper swiper-wrapper">
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+            <div class="slider swiper-container">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <p>Ремонт ноутбуков </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -351,11 +373,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <p>Ремонт планшетов </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -363,11 +385,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__image">
                     <p>Ремонт ПК </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -375,11 +397,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <p>Ремонт мониторов </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -387,11 +409,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <p>Ремонт ноутбуков </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -399,11 +421,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <p>Ремонт планшетов </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -411,11 +433,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <p>Ремонт ПК </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -423,11 +445,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <p>Ремонт мониторов </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -435,11 +457,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <p>Ремонт ноутбуков </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -447,11 +469,11 @@
                     />
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide hide">
+                  <div class="slider__image">
                     <p>Ремонт планшетов </p>
                   </div>
-                  <div class="image-slider__button">
+                  <div class="slider__button">
                     <img
                       src="src\img\dropdown-pink.png"
                       alt=""
@@ -462,26 +484,34 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
+            <button class="slider-type__open-button open-button">
+              <img src="src\img\read-more.png" class="dropdown-icon" />
+              <p>Показать все</p>
+            </button>
+            <button class="slider-type__close-button close-button hidden">
+              <img src="src\img\read-more.png" class="dropdown-icon" />
+              <p>Скрыть</p>
+            </button>
           </div>
           <h2 class="main__subtitle">Цены на услуги</h2>
           <div class="slider-price">
-            <div class="image-slider swiper-container">
-              <div class="image-slider__wrapper swiper-wrapper">
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+            <div class="slider swiper-container">
+              <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__service">
                     <span class="grey-subtitle">Ремонтные услуги</span> <br />
                     <span>Тестирование с выдачей технического заключения</span>
                   </div>
-                  <div class="image-slider__price">
+                  <div class="slider__price">
                     <span class="grey-subtitle">Цена</span> <br />
                     <span>1 000 ₽</span>
                   </div>
-                  <div class="image-slider__flex-container">
-                    <div class="image-slider__time">
+                  <div class="slider__flex-container">
+                    <div class="slider__time">
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30-120 мин</span>
                     </div>
-                    <div class="image-slider__long-button long-button">
+                    <div class="slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -491,21 +521,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__service">
                     <span class="grey-subtitle">Ремонтные услуги</span> <br />
                     <span>Диагностика</span>
                   </div>
-                  <div class="image-slider__price">
+                  <div class="slider__price">
                     <span class="grey-subtitle">Цена</span> <br />
                     <span>Бесплатно</span>
                   </div>
-                  <div class="image-slider__flex-container">
-                    <div class="image-slider__time">
+                  <div class="slider__flex-container">
+                    <div class="slider__time">
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30 мин</span>
                     </div>
-                    <div class="image-slider__long-button long-button">
+                    <div class="slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -515,21 +545,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__service">
                     <span class="grey-subtitle">Ремонтные услуги</span> <br />
                     <span>Замена дисплея</span>
                   </div>
-                  <div class="image-slider__price">
+                  <div class="slider__price">
                     <span class="grey-subtitle">Цена</span> <br />
                     <span>1 000 ₽</span>
                   </div>
-                  <div class="image-slider__flex-container">
-                    <div class="image-slider__time">
+                  <div class="slider__flex-container">
+                    <div class="slider__time">
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30-120 мин</span>
                     </div>
-                    <div class="image-slider__long-button long-button">
+                    <div class="slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -539,21 +569,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__service">
                     <span class="grey-subtitle">Ремонтные услуги</span> <br />
                     <span>Замена полифонического динамика</span>
                   </div>
-                  <div class="image-slider__price">
+                  <div class="slider__price">
                     <span class="grey-subtitle">Цена</span> <br />
                     <span>1 000 ₽</span>
                   </div>
-                  <div class="image-slider__flex-container">
-                    <div class="image-slider__time">
+                  <div class="slider__flex-container">
+                    <div class="slider__time">
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30-120 мин</span>
                     </div>
-                    <div class="image-slider__long-button long-button">
+                    <div class="slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -563,21 +593,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="image-slider__slide swiper-slide">
-                  <div class="image-slider__image">
+                <div class="slider__slide swiper-slide">
+                  <div class="slider__service">
                     <span class="grey-subtitle">Ремонтные услуги</span> <br />
                     <span>Замена программного обеспечения</span>
                   </div>
-                  <div class="image-slider__price">
+                  <div class="slider__price">
                     <span class="grey-subtitle">Цена</span> <br />
                     <span>1 000 ₽</span>
                   </div>
-                  <div class="image-slider__flex-container">
-                    <div class="image-slider__time">
+                  <div class="slider__flex-container">
+                    <div class="slider__time">
                       <span class="grey-subtitle">Срок</span> <br />
                       <span>30-120 мин</span>
                     </div>
-                    <div class="image-slider__long-button long-button">
+                    <div class="slider__long-button long-button">
                       <p>заказать</p>
                       <img
                         src="src\img\dropdown-white.png"
@@ -603,12 +633,14 @@
         </div>
       </main>
       <footer class="footer">
-        <div class="footer__text"
+        <div class="footer__text footer__text-start"
           >© 2019 CPS <br />
           Разработано командой Apesong
         </div>
-        <div class="footer__text">Политика конфиденциальности</div>
-        <div class="footer__text">
+        <div class="footer__text footer__text-center"
+          >Политика конфиденциальности</div
+        >
+        <div class="footer__text footer__text-end">
           Информация, размещенная на данной странице, не является публичной
           офертой
         </div>

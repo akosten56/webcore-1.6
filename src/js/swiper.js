@@ -1,135 +1,83 @@
-new Swiper('.image-slider', {
-  // стрелочки
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  },
+const body = document.querySelector('body')
+const breakpointSwiper = window.matchMedia('(min-width: 768px)')
+// const slidersContainer = body.querySelectorAll('.image-slider')
+let sliders
+function createSlider() {
+  if (!breakpointSwiper.matches) {
+    sliders = new Swiper('.slider', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
 
-  // кружочки или что то еще под сладами
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: false
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: false
+      },
 
-    // type: 'progressbar',
-  },
+      slideToClickedSlide: true,
 
-  // скроллбар под сладами
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  //   draggable: true
-  // },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true
+      },
 
-  slideToClickedSlide: true,
+      mousewheel: false,
 
-  // управление клавитатурой
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true
-  },
+      autoHeight: false,
 
-  // управление мышью
-  mousewheel: false,
+      slidesPerView: 1.1,
 
-  autoHeight: false, // слайдер подстраивается под высоту слайда
+      watchOverflow: true,
 
-  slidesPerView: 1.1, // количество слайдов в одной фракции
+      spaceBetween: 16,
 
-  watchOverflow: true, // отключение функционалаб если слайдов меньше чем нужно
+      slidesPerGroup: 1,
 
-  spaceBetween: 16, // отступ между слайдами
+      initialSlide: 0,
 
-  slidesPerGroup: 1, // количество пролистываемых слайдов
+      slidesPerColumn: 1,
 
-  // centeredSlides: true, // активный слайд по центру
+      loop: false,
 
-  initialSlide: 0, // стартовый слайд (отсчет с 0)
+      loopedSlides: 0,
 
-  slidesPerColumn: 1, // мультирядность
+      freeMode: false,
 
-  loop: false, // бесконечный слайдер
-  loopedSlides: 0, // количество дублирующих слайдов
+      speed: 800,
 
-  freeMode: false, // свободный режим
+      effect: 'slide',
 
-  // автопрокрутка
-  // autoplay: {
-  //     delay: 1000, // пауза между прокруктой
-  //     stopOnLastSlide: false, // закончить на последнем слайде
-  //     disableOnInteraction: true, // отключить после ручного переключения
-  // },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.1
+        },
+        380: {
+          slidesPerView: 1.3
+        },
+        460: {
+          slidesPerView: 1.5
+        },
+        500: {
+          slidesPerView: 1.7
+        },
+        580: {
+          slidesPerView: 2
+        },
+        680: {
+          slidesPerView: 2.3
+        }
+      }
+    })
+  } else {
+    for (let slider of sliders) {
+      slider.destroy()
+    }
+  }
+}
+createSlider()
 
-  // скорость переключения слайдов
-  speed: 800,
-
-  // direction: 'vertical' // вертикальный слайдер
-
-  // эффекты переключения слайдов
-
-  effect: 'slide' // по умолчанию
-
-  // effect: 'fade', // смена прозрачности
-  // fadeEffect: {
-  //     crossFade: true, // параллельная смена прозрачности
-  // },
-
-  // effect: 'flip', // переворот
-  // flipEffect: {
-  //     slideShadows: true, // тень
-  //     limitRotation: true, // показ только активного слайда
-  // },
-
-  // effect: 'cube', // куб
-  // cubeEffect: {
-  //     slideShadows: true, // тень
-  //     shadow: true,
-  //     shadowOffset: 20,
-  //     shadowScale: 0.94,
-  // },
-
-  // effect: 'coverflow', // поток, дуга
-  // coverflowEffect: {
-  //   rotate: 45, // угол
-  //   stretch: 250, // наложение
-  //   slideShadows: false // тень
-  // }
-
-  // effect: "cards", // карты
-  // cardsEffect: {
-  //     perSlideOffset:	6,
-  //     perSlideRotate: 2,
-  //     rotate: true,
-  //     slideShadows: false,
-  // },
-
-  // effect: 'creative',
-  // creativeEffect: {
-  //     prev: {
-  //       // will set `translateZ(-400px)` on previous slides
-  //       translate: [0, 0, -400],
-  //     },
-  //     next: {
-  //       // will set `translateX(100%)` on next slides
-  //       translate: ['100%', 0, 0],
-  //     },
-  // },
-
-  // адаптив слайдера
-  // брейкпоинты, ширина экрана
-  // breakpoints: {
-  //     320:{
-  //         slidesPerView: 1,
-  //     },
-  //     480:{
-  //         slidesPerView: 1,
-  //     },
-  //     992:{
-  //         slidesPerView: 1,
-  //     },
-  // },
-
-  // обновить слайдер, слайдер в табе
-  // observer: true,
-  // observerParents: true,
-  // observerSlideChildren: true,
+breakpointSwiper.addEventListener('change', function (event) {
+  createSlider()
 })

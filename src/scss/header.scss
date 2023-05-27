@@ -1,3 +1,20 @@
+// $maxWidth: 1440px;
+
+// @mixin adaptive-prop($pcProp, $mobProp) {
+//   $addProp: $pcProp - $mobProp;
+//   $addMobProp: $addProp + $addProp * 0.7;
+
+//   @media (max-width: 767px) {
+//     font-size: calc(
+//       #{$mobProp + px} + #{$addMobProp} * ((100vw - 320px) / #{$maxWidth})
+//     );
+//   }
+
+//   @media (min-width: 767px) {
+//     font-size: calc(#{$mobProp + px} + #{$addProp} * (100vw / #{$maxWidth}));
+//   }
+// }
+
 body.scroll-lock {
   overflow-y: hidden;
   & .main,
@@ -18,7 +35,8 @@ body.scroll-lock {
   height: 88px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 16px;
   background-color: #fff;
 }
 
@@ -44,6 +62,18 @@ body.scroll-lock {
 .header__burger-button {
 }
 
+.header__phone-button {
+  display: none;
+}
+
+.header__message-button {
+  display: none;
+}
+
+.header__profile-button {
+  display: none;
+}
+
 .logo {
   & img {
     width: 96.5px;
@@ -55,6 +85,12 @@ body.scroll-lock {
   height: 32px;
   background: #eaeaea;
   border-radius: 1px;
+  &.first {
+    display: none;
+  }
+  &.third {
+    display: none;
+  }
 }
 
 .header__tools-button {
@@ -63,119 +99,76 @@ body.scroll-lock {
 .header__checkstatus-button {
 }
 
-.menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 12;
-  height: 100%;
-  width: 100%;
-  background-color: #fff;
-  padding: 0 16px 16px 16px;
-  transform: translateX(-100%);
-  transition: all 0.5s;
-  &.active {
-    transform: translateX(0);
+@media (min-width: 360px) {
+  .header__profile-button {
+    display: block;
   }
 }
 
-.menu__header {
-  z-index: 11;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 88px;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #fff;
-  position: relative;
-  gap: 16px;
-}
-
-.menu__cancel-button {
-}
-
-.menu__logo {
-  margin-right: 78px;
-}
-
-.menu__search-button {
-}
-
-.menu__container {
-  margin-top: 4px;
-}
-
-.menu__list li {
-  margin-top: 24px;
-  &:first-child {
-    margin: 0;
+@media (min-width: 400px) {
+  .before-tool.second {
+    margin-right: 40px;
   }
 }
 
-.menu__link {
-  font-family: 'TTLakesMedium';
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1b1c21;
-  & span {
-    color: #7e7e82;
-    &::before {
-      content: '';
-      position: absolute;
-      height: 32px;
-      width: 4px;
-      left: 0;
-      top: 88px;
-      border-radius: 0px 10px 10px 0;
-      background: #41f6d7;
-    }
+@media (min-width: 440px) {
+  .header__message-button {
+    display: block;
+  }
+  .before-tool.second {
+    margin-right: 60px;
   }
 }
 
-.menu__function {
-  margin-top: 32px;
-  display: flex;
-  gap: 16px;
+@media (min-width: 480px) {
+  .header__phone-button {
+    display: block;
+  }
+  .before-tool.first {
+    display: block;
+  }
+  .before-tool.third {
+    display: block;
+  }
+  .before-tool.second {
+    display: none;
+  }
+  .header__logo {
+    margin-right: 40px;
+  }
 }
 
-.menu__phone-button {
+@media (min-width: 550px) {
+  .header__logo {
+    margin-right: 100px;
+  }
 }
 
-.menu__message-button {
+@media (min-width: 650px) {
+  .header__logo {
+    margin-right: 200px;
+  }
 }
 
-.menu__profile-button {
-}
+@media (min-width: 768px) {
+  .before-tool.second {
+    display: none;
+  }
+  .before-tool.first {
+    display: block;
+  }
+  .header__logo {
+    margin-right: 236px;
+  }
+  .header__phone-button {
+    display: block;
+  }
 
-.menu__mail {
-  font-family: 'TTLakesMedium';
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  margin-top: 16px;
-  color: #1b1c21;
-}
+  .header__message-button {
+    display: block;
+  }
 
-.menu__number {
-  font-family: 'TTLakesBold';
-  margin-top: 12px;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.6px;
-  color: #1b1c21;
-}
-
-.menu__chose-lang span {
-  font-family: 'TTLakesMedium';
-  margin: 8px 7px 0 0;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.2px;
-  color: #1b1c21;
-  &:first-child {
-    color: #7e7e82;
+  .header__profile-button {
+    display: block;
   }
 }
