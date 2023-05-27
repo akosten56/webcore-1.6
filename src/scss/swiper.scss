@@ -1,3 +1,13 @@
+$white: #fff;
+$almost-white: #eaeaea;
+$light-grey: #f8f8f8;
+$another-grey: #b5b6bc;
+$light-azure: #b8ffec;
+$azure: #41f6d7;
+$grey: #7e7e82;
+$black: #1b1c21;
+$pink: #ff3e79;
+
 body {
   height: 100%;
   overflow-x: hidden;
@@ -22,13 +32,14 @@ body {
 .slider-logo .slider__slide {
   height: 72px;
   width: 224px;
-  background: #ffffff;
-  border: 1px solid #eaeaea;
+  background: $white;
+  border: 1px solid $almost-white;
   border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
+  cursor: pointer;
   &.hide {
     display: flex;
   }
@@ -38,19 +49,20 @@ body {
   height: 160px;
   width: 240px;
   border-radius: 6px;
-  background: #ffffff;
-  border: 1px solid #eaeaea;
+  background: $white;
+  border: 1px solid $almost-white;
   display: flex;
   align-items: start;
   justify-content: space-between;
   padding: 16px;
+  cursor: pointer;
 }
 
 .slider-price .slider__slide {
   height: 200px;
   width: 260px;
   border-radius: 6px;
-  background: #ffffff;
+  background: $white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,9 +71,9 @@ body {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #1b1c21;
+  color: $black;
   & .grey-subtitle {
-    color: #7e7e82;
+    color: $grey;
     mix-blend-mode: normal;
     opacity: 0.72;
   }
@@ -76,7 +88,7 @@ body {
   line-height: 24px;
   letter-spacing: -0.2px;
 
-  color: #1b1c21;
+  color: $black;
 }
 
 .lenovo-logo {
@@ -119,7 +131,7 @@ body {
   justify-content: center;
   border-radius: 25px;
   border: 2px solid #ff3e79;
-  background-color: #fff;
+  background-color: $white;
   & .dropdown-pink {
     width: 8px;
   }
@@ -138,8 +150,9 @@ body {
   line-height: 24px;
   letter-spacing: -0.15px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   padding: 0 12px;
+  cursor: pointer;
   transition: all 0.3s ease 0s;
   & .dropdown-white {
     width: 8px;
@@ -175,7 +188,7 @@ body {
 .swiper-pagination-bullet {
   height: 12px;
   width: 12px;
-  background: #b5b6bc;
+  background: $another-grey;
 }
 
 .hidden {
@@ -231,7 +244,7 @@ body {
   .slider-price .slider__slide {
     height: 64px;
     width: 100%;
-    background: #ffffff;
+    background: $white;
     padding: 24px 16px;
     border-radius: 0px;
     display: flex;
@@ -257,7 +270,7 @@ body {
       content: '';
       width: calc(100% - 32px);
       height: 1px;
-      border-bottom: 1px solid #eaeaea;
+      border-bottom: 1px solid $almost-white;
       position: absolute;
       top: 0;
       left: 16px;

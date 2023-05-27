@@ -1,8 +1,18 @@
+$white: #fff;
+$almost-white: #eaeaea;
+$light-grey: #f8f8f8;
+$another-grey: #b5b6bc;
+$light-azure: #b8ffec;
+$azure: #41f6d7;
+$grey: #7e7e82;
+$black: #1b1c21;
+$pink: #ff3e79;
+
 .main {
   position: relative;
   top: 88px;
   left: 0;
-  background: #f8f8f8;
+  background: $light-grey;
   height: 100%;
   width: 100%;
   padding-top: 24px;
@@ -16,7 +26,7 @@
   font-size: 28px;
   line-height: 40px;
   letter-spacing: -0.6px;
-  color: #1b1c21;
+  color: $black;
   &::before {
     content: '';
     position: absolute;
@@ -25,7 +35,7 @@
     left: 0px;
     top: 24px;
     border-radius: 0px 10px 10px 0;
-    background: #41f6d7;
+    background: $azure;
   }
 }
 .main__function {
@@ -50,9 +60,13 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    color: #7e7e82;
-    &:nth-child(1) {
-      border: 3px solid #b8ffec;
+    color: $grey;
+    border: 3px solid transparent;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    &:hover {
+      border: 3px solid $light-azure;
       border-radius: 6px;
     }
   }
@@ -68,9 +82,14 @@
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
-  color: #1b1c21;
+  color: $black;
 }
 .info__more-text {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 .open-button {
   margin-top: 16px;
@@ -79,8 +98,8 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1b1c21;
-  background: #f8f8f8;
+  color: $black;
+  background: $light-grey;
 }
 
 .close-button {
@@ -90,8 +109,8 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1b1c21;
-  background: #f8f8f8;
+  color: $black;
+  background: $light-grey;
   & .dropdown-icon {
     transform: rotate(-180deg);
   }
@@ -103,10 +122,6 @@
   right: 16px;
   width: 8px;
   margin-left: 24px;
-}
-
-.hidden {
-  display: none;
 }
 
 .main__image {
@@ -124,8 +139,8 @@
   text-transform: uppercase;
   margin-top: 16px;
   padding: 16px;
-  color: #7e7e82;
-  background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
+  color: $grey;
+  background: linear-gradient(270deg, $light-grey 0%, $white 98.61%);
   border-radius: 5px;
 }
 
@@ -134,7 +149,7 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.2px;
-  color: #1b1c21;
+  color: $black;
 }
 .main__get-offer {
   margin-top: 16px;
@@ -142,17 +157,14 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
-  color: #1b1c21;
+  color: $black;
+  cursor: pointer;
   & .dropdown-pink {
     width: 6px;
     position: relative;
     top: 8px;
     left: 4px;
   }
-}
-
-.hidden {
-  display: none;
 }
 
 @media (min-width: 768px) {
@@ -196,7 +208,7 @@
       line-height: 24px;
       text-align: right;
       letter-spacing: -0.2px;
-      color: #1b1c21;
+      color: $black;
       margin-left: 24px;
     }
   }
