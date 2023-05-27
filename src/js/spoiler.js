@@ -1,5 +1,14 @@
 const body = document.querySelector('body')
 
+// const breakpointSpoiler = window.matchMedia('(min-width: 1300px)')
+// const show = body.querySelector('.show')
+
+// breakpointSpoiler.addEventListener('change', function (event) {
+//   if (!breakpointSwiper.matches) {
+//     show.classList.remove('.slider-type hide')
+//   }
+// })
+
 const openButton = body.querySelector('.info__open-button')
 const closeButton = body.querySelector('.info__close-button')
 const moreText = body.querySelector('.info__more-text')

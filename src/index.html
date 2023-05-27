@@ -53,64 +53,81 @@
             <img class="icon" src="src\img\search-icon.png" />
           </button>
         </div>
-        <nav class="menu__container">
-          <ul class="menu__list">
-            <li
-              ><a class="menu__link" href="#" tabindex="1"
-                ><span>Ремонт техники</span></a
-              ></li
-            >
-            <li
-              ><a class="menu__link" href="#" tabindex="2"
-                >Услуги и сервисы</a
-              ></li
-            >
-            <li
-              ><a class="menu__link" href="#" tabindex="3"
-                >Корпоративным клиентам</a
-              ></li
-            >
-            <li
-              ><a class="menu__link" href="#" tabindex="4"
-                >Продавцам техники</a
-              ></li
-            >
-            <li><a class="menu__link" href="#" tabindex="5">Партнерам</a></li>
-            <li
-              ><a class="menu__link" href="#" tabindex="6"
-                >Производителям</a
-              ></li
-            >
-            <li
-              ><a class="menu__link" href="#" tabindex="7"
-                >Наши сервисные центры</a
-              ></li
-            >
-            <li><a class="menu__link" href="#" tabindex="8">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="menu__function">
-          <button class="menu__phone-button button-circle">
-            <img class="icon" src="src\img\phone-icon.png" />
-          </button>
-          <button class="menu__message-button button-circle">
-            <img class="icon" src="src\img\message-icon.png" />
-          </button>
-          <button class="menu__profile-button button-circle">
-            <img class="icon" src="src\img\profile-icon.png" />
-          </button>
-        </div>
-        <div class="menu__mail">mail@cps.com</div>
-        <div class="menu__number">8 800 890 8900</div>
-        <div class="menu__chose-lang">
-          <span class="lang">RU</span>
-          <span class="lang">EN</span>
-          <span class="lang">CH</span>
+        <div class="menu__flex-box">
+          <nav class="menu__container">
+            <ul class="menu__list">
+              <li
+                ><a class="menu__link" href="#" tabindex="1"
+                  ><span>Ремонт техники</span></a
+                ></li
+              >
+              <li
+                ><a class="menu__link" href="#" tabindex="2"
+                  >Услуги и сервисы</a
+                ></li
+              >
+              <li
+                ><a class="menu__link" href="#" tabindex="3"
+                  >Корпоративным клиентам</a
+                ></li
+              >
+              <li
+                ><a class="menu__link" href="#" tabindex="4"
+                  >Продавцам техники</a
+                ></li
+              >
+              <li><a class="menu__link" href="#" tabindex="5">Партнерам</a></li>
+              <li
+                ><a class="menu__link" href="#" tabindex="6"
+                  >Производителям</a
+                ></li
+              >
+              <li
+                ><a class="menu__link" href="#" tabindex="7"
+                  >Наши сервисные центры</a
+                ></li
+              >
+              <li><a class="menu__link" href="#" tabindex="8">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="menu__contact">
+            <div class="menu__function">
+              <button class="menu__phone-button button-circle">
+                <img class="icon" src="src\img\phone-icon.png" />
+              </button>
+              <button class="menu__message-button button-circle">
+                <img class="icon" src="src\img\message-icon.png" />
+              </button>
+              <button class="menu__profile-button button-circle">
+                <img class="icon" src="src\img\profile-icon.png" />
+              </button>
+            </div>
+            <div class="menu__mail">mail@cps.com</div>
+            <div class="menu__number">8 800 890 8900</div>
+            <div class="menu__chose-lang">
+              <span class="lang">RU</span>
+              <span class="lang">EN</span>
+              <span class="lang">CH</span>
+            </div>
+          </div>
         </div>
       </div>
       <main class="main">
         <div class="main__container">
-          <h1 class="main__title">Услуги и сервисы</h1>
+          <div class="main__flex-box">
+            <h1 class="main__title">Услуги и сервисы</h1>
+            <div class="main__function">
+              <span>Оставить заявку</span>
+              <button class="main__tools-button button-circle">
+                <img class="icon" src="src\img\tools-icon.png" />
+              </button>
+              <span>Статус ремонта</span>
+              <button class="main__checkstatus-button button-circle">
+                <img class="icon" src="src\img\checkstatus-icon.png" />
+              </button>
+            </div>
+          </div>
+
           <div class="nav-list">
             <div class="nav-list__item">Ремонтируемые бренды</div>
             <div class="nav-list__item">Дополнительные услуги</div>
@@ -147,7 +164,6 @@
             <img src="src\img\cps-main.jpg" alt="" />
           </div>
         </div>
-
         <div class="main__container">
           <h2 class="main__subtitle">Ремонт техники различных брендов</h2>
           <div class="slider-logo">
@@ -249,7 +265,7 @@
                     />
                   </div>
                 </div>
-                <div class="slider__slide swiper-slide hide">
+                <div class="slider__slide swiper-slide hide show">
                   <div class="slider__image">
                     <img
                       class="viewsonic-logo"
@@ -265,7 +281,7 @@
                     />
                   </div>
                 </div>
-                <div class="slider__slide swiper-slide hide">
+                <div class="slider__slide swiper-slide hide show">
                   <div class="slider__image">
                     <img
                       class="sony-logo"
@@ -397,7 +413,7 @@
                     />
                   </div>
                 </div>
-                <div class="slider__slide swiper-slide hide">
+                <div class="slider__slide swiper-slide hide show">
                   <div class="slider__image">
                     <p>Ремонт мониторов </p>
                   </div>
