@@ -8,17 +8,6 @@ $grey: #7e7e82;
 $black: #1b1c21;
 $pink: #ff3e79;
 
-body.scroll-lock {
-  overflow-y: hidden;
-  & .main,
-  & .header {
-    filter: grayscale(87%) blur(6px) opacity(49%);
-    -webkit-filter: grayscale(87%) blur(6px) opacity(49%);
-    -moz-filter: grayscale(87%) blur(6px) opacity(49%);
-    transition: 0.3s ease-in-out;
-  }
-}
-
 .header {
   position: fixed;
   z-index: 11;
