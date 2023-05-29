@@ -880,6 +880,9 @@ h6 {
   src: url(./fonts/TTLakes-Bold.ttf);
   font-weight: 600; }
 
+html {
+  overflow-x: hidden; }
+
 .wrapper {
   margin: 0 auto;
   max-width: 1440px;
