@@ -54,6 +54,7 @@ $pink: #ff3e79;
     display: none;
   }
   .nav-list__item {
+    display: block;
     padding: 6px 14px;
     white-space: nowrap;
     font-family: 'TTLakesMedium';
@@ -152,13 +153,13 @@ $pink: #ff3e79;
   color: $black;
 }
 .main__get-offer {
+  display: block;
   margin-top: 16px;
   font-family: 'TTLakesMedium';
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   color: $black;
-  cursor: pointer;
   & .dropdown-pink {
     width: 6px;
     position: relative;

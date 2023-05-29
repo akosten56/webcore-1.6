@@ -39,7 +39,6 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
-  cursor: pointer;
   &.hide {
     display: flex;
   }
@@ -55,7 +54,6 @@ body {
   align-items: start;
   justify-content: space-between;
   padding: 16px;
-  cursor: pointer;
 }
 
 .slider-price .slider__slide {
@@ -152,7 +150,6 @@ body {
   text-transform: uppercase;
   color: $white;
   padding: 0 12px;
-  cursor: pointer;
   transition: all 0.3s ease 0s;
   & .dropdown-white {
     width: 8px;
