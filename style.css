@@ -389,7 +389,7 @@ body.scroll-lock {
   color: #1b1c21; }
 
 .info__more-text {
-  display: block; }
+  display: inline; }
 
 .hidden {
   display: none; }
